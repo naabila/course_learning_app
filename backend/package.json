@@ -1,0 +1,22 @@
+{
+    "name": "course-learning-app-backend",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "ts-node src/app.ts",
+      "dev": "nodemon src/app.ts"
+    },
+    "dependencies": {
+      "express": "^4.18.2",
+      "mongoose": "^7.6.3",
+      "jsonwebtoken": "^9.0.2",
+      "dotenv": "^16.3.1"
+    },
+    "devDependencies": {
+      "@types/express": "^4.17.17",
+      "@types/node": "^20.8.0",
+      "@types/jsonwebtoken": "^9.0.2",
+      "ts-node": "^10.9.1",
+      "nodemon": "^3.0.1",
+      "typescript": "^5.2.2"
+    }
+  }
