@@ -1,7 +1,7 @@
 import mongoose, { Schema } from 'mongoose';
 import { ICourse } from '../interfaces/course.interface';
 
-const courseSchema = new Schema<ICourse>({
+const courseSchema = new Schema({
   title: { type: String, required: true },
   description: { type: String, required: true },
   teacher: { type: Schema.Types.ObjectId, ref: 'User', required: true },
@@ -14,4 +14,5 @@ const courseSchema = new Schema<ICourse>({
   level: { type: String },
 });
 
+// Explicitly type the model
 export default mongoose.model<ICourse>('Course', courseSchema);

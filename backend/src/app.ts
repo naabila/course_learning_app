@@ -11,6 +11,11 @@ const app = express();
 
 app.use(express.json());
 
+// Default route
+app.get('/', (req, res) => {
+    res.json({ message: 'Welcome to the Course Learning App API.' });
+  });
+
 // Connect to MongoDB
 connectDB();
 

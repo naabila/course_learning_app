@@ -6,9 +6,9 @@ const userSchema = new Schema<IUser>({
   name: { type: String, required: true },
   email: { type: String, required: true, unique: true },
   role: { type: String, enum: ['student', 'teacher'], required: true },
-  coursesEnrolled: [{ type: Schema.Types.ObjectId, ref: 'Course' }],
-  coursesCreated: [{ type: Schema.Types.ObjectId, ref: 'Course' }],
-  followedTeachers: [{ type: Schema.Types.ObjectId, ref: 'User' }],
+  coursesEnrolled: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Course' }],
+  coursesCreated: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Course' }],
+  followedTeachers: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
 });
 
 export default mongoose.model<IUser>('User', userSchema);
