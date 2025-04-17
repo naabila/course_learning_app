@@ -9,16 +9,17 @@ import './index.css';
 
 const App: React.FC = () => {
   return (
-    <AuthProvider>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/auth" element={<Auth />} />
-          <Route path="/create-course" element={<CreateCourse />} />
-        </Routes>
-      </Router>
-    </AuthProvider>
+    <h1>hwllo</h1>
+    // <AuthProvider>
+    //   <Router>
+    //     <Navbar />
+    //     <Routes>
+    //       <Route path="/" element={<Home />} />
+    //       <Route path="/auth" element={<Auth />} />
+    //       <Route path="/create-course" element={<CreateCourse />} />
+    //     </Routes>
+    //   </Router>
+    // </AuthProvider>
   );
 };
 
